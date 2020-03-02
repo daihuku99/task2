@@ -11,19 +11,47 @@
 }
 
 main {
-	margin: 50px auto;
 	width: 960px;
+	margin: 0 auto;
 }
 
 .contents {
+	width: 100%;
+	margin: 50px auto;
+
+}
+
+.content {
 	border: 1px solid #f7f7f7;
 	float: left;
 	width: 300px;
+	padding: 10px;
 	position: relative;
 	margin-right: 30px;
 }
 
-.contents:last-child {
+.background1 {
+	width: 280px;
+	height: 140px;
+	background-image: url(img9/flow01.png);
+	background-size: cover;
+}
+
+.background2 {
+	width: 280px;
+	height: 140px;
+	background-image: url(img9/flow02.png);
+	background-size: cover;
+}
+
+.background3 {
+	width: 280px;
+	height: 140px;
+	background-image: url(img9/flow03.png);
+	background-size: cover;
+}
+
+.content:last-child {
 	margin-right: 0;
 }
 
@@ -35,23 +63,25 @@ main {
 	left: 0;
 }
 
-.image {
-	width: 280px;
-	padding: 10px;
-}
-
-.contents-title {
+.content-title {
 	font-size: 15px;
 }
 
 @media screen and (max-width: 768px) {
 	main {
 		width: 90%;
-		margin: 50px auto;
 	}
 
-	.contents:nth-child(odd) {
-		margin-top: 20px;
-		margin-bottom: 20px;
+	.content {
+		margin: 0 auto;
+		float: none;
+	}
+
+	.content:last-child {
+	  margin: 0 auto;
+    }
+
+	.content:nth-child(2) {
+		margin: 20px auto;
 	}
 }
