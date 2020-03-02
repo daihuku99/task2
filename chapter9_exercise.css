@@ -1,0 +1,57 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+main {
+	margin: 50px auto;
+	width: 960px;
+}
+
+.contents {
+	border: 1px solid #f7f7f7;
+	float: left;
+	width: 300px;
+	position: relative;
+	margin-right: 30px;
+}
+
+.contents:last-child {
+	margin-right: 0;
+}
+
+.step {
+	color: #fff;
+	background-color: orange;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.image {
+	width: 280px;
+	padding: 10px;
+}
+
+.contents-title {
+	font-size: 15px;
+}
+
+@media screen and (max-width: 768px) {
+	main {
+		width: 90%;
+		margin: 50px auto;
+	}
+
+	.contents:nth-child(odd) {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+}
