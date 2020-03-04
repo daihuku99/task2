@@ -73,10 +73,11 @@ main {
 	}
 
 	.contents {
-		width: 90%;
+		width: 100%;
 	}
 
 	.content {
+		width: 100%;
 		margin: 0 auto;
 		float: none;
 	}
@@ -90,6 +91,8 @@ main {
 	}
 
 	.background1, .background2, .background3 {
-		width: 90%;
+		width: 100%;
+		margin: 0 auto;
+		background-size: cover;
 	}
 }
